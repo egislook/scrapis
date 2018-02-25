@@ -1,0 +1,30 @@
+{
+  "name": "scrapis",
+  "version": "0.0.0",
+  "description": "scraping library to get data usign jquery or cheerio from html",
+  "main": "scrapis.js",
+  "scripts": {
+    "test": "node -e \"require('./test/test.js')().then(console.log)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egislook/scrapis.git"
+  },
+  "keywords": [
+    "scarpe",
+    "web",
+    "html",
+    "jquery",
+    "cheerio",
+    "schema"
+  ],
+  "author": "egislook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egislook/scrapis/issues"
+  },
+  "homepage": "https://github.com/egislook/scrapis#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "scrapis",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "scraping library to get data usign jquery or cheerio from html",
   "main": "scrapis.js",
   "scripts": {

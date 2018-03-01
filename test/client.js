@@ -1,10 +1,5 @@
-const cheerio   = require('cheerio');
-const fs        = require('fs');
-const scrapis   = require('../scrapis.js');
-
-function test(html){
-  html = html || fs.readFileSync('./test/test.html', 'utf8');
-  let schema = {
+$(document).ready(function(){
+  var data = scrapis({
     name:     'h1, eq:0, text',
     desc:     'p, eq:1, text',
     title:    'title',
@@ -16,9 +11,6 @@ function test(html){
         usd: 'td a.price, attr:data-usd',
       }
     }]
-  };
-  let data = scrapis(schema, cheerio.load(html));
-  return Promise.resolve({ ok: true, schema, data });
-}
-
-module.exports = test;
+  }, $);
+  console.log(data);
+});
